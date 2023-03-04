@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lynn's Personal Website">
+    <meta name="author" content="Lynn Kim">
+
+    <title>Portfolio</title>
+
+    <link rel="icon" href="images/icon.png"> <!-- Icon from Flaticon -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="portfolio-body">
+    <div class="container">
+        <header id="portfolio-row-1">
+            <!-- Regular Nav Bar -->
+            <nav id="full-nav">
+                <a href="index.html" id="home-link" class="nav-link">Home</a>
+                <a href="portfolio.html" id="portfolio-link" class="nav-link">Portfolio</a>
+                <a href="resume.pdf" id="resume-link" class="nav-link" target="_blank">Resume</a>
+                <button type="button" onclick="window.open('mailto:lckim@andrew.cmu.edu','_blank')">Contact</button>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="navigation" id="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.pdf">Experience</a></li>
+                        <li><a href="mailto:lckim@andrew.cmu.edu" target="_blank">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+            <!-- End Hamburger Menu -->
+        </header> <!-- Close Row-1 -->
+
+        <!-- Content -->
+        <div id="portfolio-projects-wrapper" class="slide2">
+            <div class="row">
+                <div class="column">
+                    <div class="project">
+                        <img class="project-img" src="portfolio/autolab.png">
+                        <div class="project-overlay">
+                            <p class="project-description">
+                                Web service for managing and auto-grading programming
+                                assignments, used by multiple universities across the
+                                United States.
+                            </p>
+                            <p class="project-tools">
+                                <span class="project-tool">Ruby on Rails</span>
+                                <span class="project-tool">JavaScript</span>
+                                <span class="project-tool">Python</span>
+                                <span class="project-tool">Docker</span>
+                            </p>
+                        </div>
+                    </div>
+                    <h2>
+                        Autolab
+                        <a href="https://github.com/autolab" target="_blank">
+                            <i class="fa fa-github fa-1x portfolio-github" alt="Github"></i></a>
+                        <a href="https://autolabproject.com/" target="_blank">
+                            <i class="fa-solid fa-window-restore" alt="View"></i></a>
+                    </h2>
+                </div>
+                <!-- End Column -->
+                <div class="column">
+                    <div class="project">
+                        <img class="project-img" src="portfolio/cognitive-tutoring.png">
+                        <div class="project-overlay">
+                            <p class="project-description">
+                                HCI Independent Study on Human-AI Co-orchestration of
+                                Collaborative Learning. Peer tutoring interface with
+                                Cognitive Tutor AI using behavior graphs to mimic
+                                problem-solving.
+                            </p>
+                            <p class="project-tools">
+                                <span class="project-tool">Vue.js</span>
+                                <span class="project-tool">JavaScript</span>
+                                <span class="project-tool">HTML</span>
+                                <span class="project-tool">CSS</span>
+                            </p>
+                        </div>
+                    </div>
+                    <h2>
+                        Cognitive Tutoring
+                        <a href="https://github.com/CMUCTAT/CTAT" target="_blank">
+                            <i class="fa fa-github fa-1x portfolio-github" alt="Github"></i></a>
+                        <a href="https://collaboration.mathtutor.web.cmu.edu/" target="_blank">
+                            <i class="fa-solid fa-window-restore" alt="View"></i></a>
+                    </h2>
+                </div>
+                <!-- End Column -->
+                <div class="column">
+                    <div class="project">
+                        <img class="project-img" src="portfolio/tartanhacks-dashboard.png">
+                        <div class="project-overlay">
+                            <p class="project-description">
+                                A mobile application created for Pittsburgh's largest
+                                annual hackathon, TartanHacks. Seen and used by hundreds
+                                of students, sponsors, and recruiters.
+                            </p>
+                            <p class="project-tools">
+                                <span class="project-tool">Android Studio</span>
+                                <span class="project-tool">Flutter</span>
+                                <span class="project-tool">Dart</span>
+                            </p>
+                        </div>
+                    </div>
+                    <h2>
+                        TartanHacks Dashboard
+                        <a href="https://github.com/ScottyLabs/tartanhacks_dashboard_v2" target="_blank">
+                            <i class="fa fa-github fa-1x portfolio-github" alt="Github"></i></a>
+                    </h2>
+                </div>
+                <!-- End Column -->
+            </div>
+        </div>
+
+    </div> <!-- Close Container -->
+    <script src="https://kit.fontawesome.com/222ca3b96c.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

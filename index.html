@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lynn's Personal Website">
+    <meta name="author" content="Lynn Kim">
+
+    <title>Lynn Kim</title>
+
+    <link rel="icon" href="images/icon.png"> <!-- Icon from Flaticon -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="row-1">
+            <!-- Regular Nav Bar -->
+            <nav id="full-nav">
+                <a href="index.html" id="home-link" class="nav-link">Home</a>
+                <a href="portfolio.html" id="portfolio-link" class="nav-link">Portfolio</a>
+                <a href="resume.pdf" id="resume-link" class="nav-link" target="_blank">Resume</a>
+                <button type="button" onclick="window.open('mailto:lckim@andrew.cmu.edu','_blank')">Contact</button>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="navigation" id="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="resume.pdf">Experience</a></li>
+                        <li><a href="mailto:lckim@andrew.cmu.edu" target="_blank">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+            <!-- End Hamburger Menu -->
+        </header> <!-- Close Row-1 -->
+
+        <div id="row-2">
+            <div class="typewriter">
+                <h1>Hi I'm</h1>
+                <h1><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+            </div>
+            <h2 class="slide">Student at Carnegie Mellon University</h2>
+
+            <div id="social-media-icons" class="slide">
+                <a href="mailto:lckim@andrew.cmu.edu" target="_blank"><i class="fa fa-envelope fa-3x social"
+                        alt="Email"></i></a>
+                <a href="https://github.com/lykimchee" target="_blank"><i class="fa fa-github fa-3x social"
+                        alt="Github"></i></a>
+                <a href="https://www.linkedin.com/in/lynnchaeryn/" target="_blank">
+                    <i class="fa fa-linkedin fa-3x social" alt="LinkedIn"></i></a>
+                <a href="https://open.spotify.com/user/lykimchee" target="_blank">
+                    <i class="fa fa-spotify fa-3x social" alt="Spotify"></i></a>
+            </div> <!-- Close Social Media Icons -->
+        </div> <!-- Close Row 2 -->
+
+        <div id="row-3">
+            <footer class="slide">Site built from scratch by Lynn. It's mobile friendly!</footer>
+        </div> <!-- Close Row 3 -->
+
+    </div> <!-- Close Container -->
+    <script src="https://kit.fontawesome.com/222ca3b96c.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/typing-animation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,587 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Source Serif Pro";
+    src: url("SourceSerifPro-ExtraLightItalic.ttf")
+}
+
+@font-face {
+    font-family: "Poppins Extra Light";
+    src: url("Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Light";
+    src: url("Poppins-Light.ttf");
+}
+
+/* Text */
+
+footer {
+    font-family: "Poppins Extra Light";
+    font-size: 0.8em;
+    color: #39345a;
+    align-self: end;
+}
+
+h1 {
+    font-family: "Poppins Light";
+    font-size: 4em;
+    color: #39345a;
+    line-height: 1.1;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Source Serif Pro";
+    font-size: 1.5em;
+    color: #39345a;
+    letter-spacing: 1.25px;
+    margin: 0;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+}
+
+a {
+    color: #39345a;
+    text-decoration: none;
+}
+
+li {
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+}
+
+/* Page Styling */
+
+html,
+body {
+    height: 90%;
+}
+
+body {
+    margin: 5% 5% 5% 10%;
+    font-family: "Poppins Light";
+    color: #39345a;
+    background-image: url('../images/background.png');
+    background-position: 25% 0%;
+    background-attachment: fixed;
+}
+
+/* Home Page Spacing */
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#row-1 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#row-2 {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+#social-media-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social:hover {
+    font-size: 3.25em;
+}
+
+#row-3 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Mobile Nav Bar */
+
+#menu {
+    display: none
+}
+
+/* Regular Nav Bar */
+
+.nav-link {
+    margin-right: 1.5em;
+}
+
+#home-link {
+    display: inline-block;
+    position: relative;
+}
+
+#home-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #30bcf7;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#home-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#portfolio-link {
+    display: inline-block;
+    position: relative;
+}
+
+#portfolio-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #914ef5;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#portfolio-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#resume-link {
+    display: inline-block;
+    position: relative;
+}
+
+#resume-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #f8a8b1;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#resume-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+button {
+    border: none;
+    background-color: #f4b903;
+    color: #39345a;
+    text-decoration: none;
+    font-family: "Poppins Light";
+    font-size: 16px;
+    border-radius: 15px;
+    padding: 5px 1.5em;
+    margin-right: 1.5em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #39345a;
+    color: white;
+}
+
+/* Home Page */
+
+.fa-envelope:hover {
+    color: #f4b903;
+}
+
+.fa-github:hover {
+    color: #30bcf7;
+}
+
+.fa-linkedin:hover {
+    color: #914ef5;
+}
+
+.fa-spotify:hover {
+    color: #f8a8b1;
+}
+
+.fa {
+    margin-right: 0.5em;
+}
+
+/* Typewriter Animation */
+
+.typewriter {
+    overflow: hidden;
+}
+
+.cursor {
+    display: inline-block;
+    width: 4px;
+    background-color: #39345a;
+    margin-left: 0.1em;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    20% {
+        background-color: #39345a;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    80% {
+        background-color: #39345a;
+    }
+}
+
+/* Portfolio Page */
+
+#portfolio-body {
+    margin: 5% 5% 0% 5%;
+}
+
+#portfolio-row-1 {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#portfolio-projects-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#mobile-spacer {
+    display: none;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+    width: 33%;
+}
+
+/* Individual Projects */
+
+.project {
+    width: 90%;
+    height: 250px;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 52, 97, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    border-radius: 15px;
+}
+
+.project-overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.project-overlay:hover {
+    opacity: 1;
+}
+
+.project-overlay:hover>* {
+    transform: translateY(0);
+}
+
+.project-description {
+    margin: 10%;
+    margin-bottom: 5%;
+    font-size: 0.9em;
+}
+
+.project-tools {
+    margin: 0% 10% 10% 10%;
+}
+
+.project-tool {
+    padding: 2px 5px 2px 5px;
+    border: solid white 1px;
+    font-size: 0.9em;
+    line-height: 2em;
+}
+
+.portfolio-github {
+    margin-right: 0;
+}
+
+.portfolio-github:hover {
+    color: #39345a;
+}
+
+/* Slide in Animations */
+
+.slide {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInBottom;
+}
+
+.slide2 {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideFadeInBottom;
+}
+
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFadeInBottom {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Portfolio Page Resizing */
+
+@media screen and (min-width: 750px) {
+
+    /* Portfolio 2 columns to 1 column */
+
+    .column {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    h2 {
+        font-size: 1.25em;
+    }
+
+    .project-description {
+        font-size: 0.75em;
+    }
+
+    .project-tool {
+        font-size: 0.75em;
+    }
+
+    .project {
+        height: 200px;
+    }
+}
+
+/* Media Responsiveness */
+
+@media screen and (max-width: 750px) {
+    #row-2 {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #row-3 {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 2%;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    /* Change nav bar style to hamburger menu */
+
+    #full-nav {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        z-index: 2
+    }
+
+    #menu-bar {
+        width: 45px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: #39345a;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    #bar1 {
+        transform: translateY(-4px);
+    }
+
+    #bar3 {
+        transform: translateY(4px);
+    }
+
+    .navigation {
+        transition: 0.3s ease;
+        display: none;
+        margin-top: 25%;
+        margin-right: -25%;
+    }
+
+    .navigation ul {
+        text-align: right;
+    }
+
+    .navigation li {
+        list-style: none;
+        margin: 0.75em 0em;
+    }
+
+    .navigation li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .menu-bg,
+    #menu {
+        top: 8%;
+        right: 10%;
+        position: absolute;
+    }
+
+    .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 0px 0px 00px 00px;
+        background: radial-gradient(circle, #39345a, #39345a);
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+
+    .change {
+        display: block;
+        float: right;
+    }
+
+    .change .bar {
+        background-color: white;
+    }
+
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(-45deg);
+    }
+
+    .change-bg {
+        width: 500px;
+        height: 440px;
+        transform: translate(65%, -25%);
+    }
+
+    /* Portfolio screen mobile layout */
+
+    #portfolio-projects-wrapper {
+        margin-top: 22%;
+    }
+
+    .project-description {
+        font-size: 0.9em;
+    }
+
+    .project-tool {
+        font-size: 0.9em;
+    }
+
+    .project {
+        height: 250px;
+    }
+}
